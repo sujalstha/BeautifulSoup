@@ -1,4 +1,4 @@
 # learning to being an expert #
-from bs4 import BeautifulSoup as BS
+from bs4 import BeautifulSoup
 import requests
 
