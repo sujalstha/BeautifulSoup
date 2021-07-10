@@ -2,5 +2,6 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = 'https://www.teamfortress.com/'
+url = requests.get('https://www.teamfortress.com/').text
+soup = BeautifulSoup(url, 'html')
 
