@@ -4,4 +4,5 @@ import requests
 
 url = requests.get('https://www.teamfortress.com/').text
 soup = BeautifulSoup(url, 'html')
-
+id = soup.find('id').text
+print(url.text())
