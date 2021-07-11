@@ -9,4 +9,4 @@ id_find = soup.find_all('div')
 href = soup.find_all('href')
 # text = id_find.id.text
 for href in id_find:
-    print(href)
+    print(href.text)
