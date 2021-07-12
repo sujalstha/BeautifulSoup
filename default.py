@@ -12,4 +12,4 @@ href = soup.find_all('href')
 all_text_tf_website = []
 
 for href in id_find:
-    print(href)
+    print(href.text)
