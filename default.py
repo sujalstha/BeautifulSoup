@@ -22,3 +22,12 @@ for lis in all_text_tf_website:
         print(lis)
     else:
         pass
+
+
+def remove_items(test_list, item):
+    # using list comprehension to perform the task
+    res = [i for i in test_list if i != item]
+
+    return res
+
+
