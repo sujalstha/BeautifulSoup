@@ -16,3 +16,6 @@ for href in id_find:
     all_text_tf_website.append(text_tf_web)
 
 print(all_text_tf_website)
+
+for lis in all_text_tf_website:
+    print(lis)
