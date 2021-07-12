@@ -25,10 +25,10 @@ for lis in all_text_tf_website:
 
 
 def remove_items(test_list, item):
-    res = [i for i in test_list if i != item]
-    return res
+    rest = [i for i in test_list if i != item]
+    return rest
 
 
 if __name__ == "__main__":
-    test_list = [1, 3, 4, 6, 5, 1]
-    item = 1
+    item = ''
+    res = remove_items(all_text_tf_website, item)
