@@ -18,4 +18,7 @@ for href in id_find:
 print(all_text_tf_website)
 
 for lis in all_text_tf_website:
-    print(lis)
+    if '' in lis:
+        print(lis)
+    else:
+        pass
