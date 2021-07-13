@@ -23,6 +23,8 @@ for lis in all_text_tf_website:
 
 print(all_text_tf_website)
 
+list(filter(lambda a: a != '', all_text_tf_website))
+
 
 def remove_items(test_list, item):
     rest = [i for i in test_list if i != item]
