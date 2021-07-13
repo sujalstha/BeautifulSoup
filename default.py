@@ -17,9 +17,11 @@ for href in id_find:
 
 for lis in all_text_tf_website:
     if '' in lis:
-        print(lis)
+        pass
     else:
         pass
+
+print(all_text_tf_website)
 
 
 def remove_items(test_list, item):
