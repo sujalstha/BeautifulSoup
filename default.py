@@ -15,8 +15,6 @@ for href in id_find:
     text_tf_web = [href.text.replace('\n', '')]
     all_text_tf_website.append(text_tf_web)
 
-print(all_text_tf_website)
-
 for lis in all_text_tf_website:
     if '' in lis:
         print(lis)
@@ -32,3 +30,4 @@ def remove_items(test_list, item):
 if __name__ == "__main__":
     item = ''
     res = remove_items(all_text_tf_website, item)
+    print(str(res))
