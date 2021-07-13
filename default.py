@@ -28,13 +28,3 @@ print('List 2: \n', all_text_tf_website)
 list(filter(lambda a: a != '', all_text_tf_website))
 
 print(all_text_tf_website)
-
-'''def remove_items(test_list, item):
-    rest = [i for i in test_list if i != item]
-    return rest
-
-
-if __name__ == "__main__":
-    item = ''
-    res = remove_items(all_text_tf_website, item)
-    print(str(res))'''
