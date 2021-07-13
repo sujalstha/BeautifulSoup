@@ -16,8 +16,9 @@ for href in id_find:
     all_text_tf_website.append(text_tf_web)
 
 for lis in all_text_tf_website:
-    if '' in lis:
-        list.remove(lis)
+    r_text = ''
+    if lis == r_text:
+        list.remove(r_text)
         print(all_text_tf_website)
     else:
         pass
