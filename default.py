@@ -21,4 +21,5 @@ del all_text_tf_website[:4]
 
 text_tf_website = [s for s in all_text_tf_website if s != '']
 
-print(text_tf_website)
+for text in text_tf_website:
+    print(text)
