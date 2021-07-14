@@ -16,14 +16,6 @@ for href in id_find:
     all_text_tf_website.append(text_tf_web)
 
 r_text = ''
-'''for lis in all_text_tf_website:
-    if lis == str(r_text):
-        all_text_tf_website.remove(r_text)
-
-print('List 2: \n', all_text_tf_website)
-
-
-list(filter(lambda a: a != '', all_text_tf_website))'''
 
 del all_text_tf_website[:4]
 
