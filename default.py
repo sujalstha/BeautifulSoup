@@ -26,3 +26,5 @@ print('List 2: \n', all_text_tf_website)
 list(filter(lambda a: a != '', all_text_tf_website))'''
 
 del all_text_tf_website[:3]
+
+print(all_text_tf_website)
