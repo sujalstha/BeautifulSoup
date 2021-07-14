@@ -19,4 +19,6 @@ r_text = ''
 
 del all_text_tf_website[:4]
 
-print([s for s in all_text_tf_website if s != ''])
+text_tf_website = [s for s in all_text_tf_website if s != '']
+
+print(text_tf_website)
