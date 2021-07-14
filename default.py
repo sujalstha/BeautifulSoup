@@ -18,7 +18,7 @@ for href in id_find:
 print('List 1: \n', all_text_tf_website, '\n')
 
 r_text = ''
-for lis in all_text_tf_website:
+'''for lis in all_text_tf_website:
     if lis == str(r_text):
         all_text_tf_website.remove(r_text)
 
@@ -27,4 +27,8 @@ print('List 2: \n', all_text_tf_website)
 
 list(filter(lambda a: a != '', all_text_tf_website))
 
-print(all_text_tf_website)
+print(all_text_tf_website)'''
+
+for ele in all_text_tf_website:
+    for lis in ele:
+        print(lis)
