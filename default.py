@@ -27,4 +27,4 @@ list(filter(lambda a: a != '', all_text_tf_website))'''
 
 del all_text_tf_website[:4]
 
-print(all_text_tf_website)
+print([s for s in all_text_tf_website if s != ''])
