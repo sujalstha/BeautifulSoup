@@ -15,8 +15,6 @@ for href in id_find:
     text_tf_web = [href.text.replace('\n', '')]
     all_text_tf_website.append(text_tf_web)
 
-print('List 1: \n', all_text_tf_website, '\n')
-
 r_text = ''
 '''for lis in all_text_tf_website:
     if lis == str(r_text):
