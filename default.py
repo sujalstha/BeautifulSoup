@@ -12,7 +12,7 @@ href = soup.find_all('href')
 all_text_tf_website = []
 
 for href in id_find:
-    text_tf_web = [href.text.replace('\n', '')]
+    text_tf_web = href.text.replace('\n', '')
     all_text_tf_website.append(text_tf_web)
 
 r_text = ''
@@ -25,6 +25,6 @@ print('List 2: \n', all_text_tf_website)
 
 list(filter(lambda a: a != '', all_text_tf_website))'''
 
-del all_text_tf_website[:3]
+del all_text_tf_website[:4]
 
 print(all_text_tf_website)
