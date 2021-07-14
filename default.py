@@ -23,10 +23,6 @@ r_text = ''
 print('List 2: \n', all_text_tf_website)
 
 
-list(filter(lambda a: a != '', all_text_tf_website))
+list(filter(lambda a: a != '', all_text_tf_website))'''
 
-print(all_text_tf_website)'''
-
-for ele in all_text_tf_website:
-    for lis in ele:
-        print(lis)
+print(all_text_tf_website)
