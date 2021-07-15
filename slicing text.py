@@ -10,6 +10,8 @@ with open("tf2 website text.txt", "w") as file:
 
     file.close()
 
+print(web_lis)
+
 
 def remove_doublespace(string):
     if '  ' not in string:
