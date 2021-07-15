@@ -2,6 +2,7 @@
 from bs4 import BeautifulSoup
 import requests
 import lxml
+import  io
 
 url = requests.get('https://www.teamfortress.com/').text
 soup = BeautifulSoup(url, 'lxml')
