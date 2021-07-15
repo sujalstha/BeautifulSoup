@@ -22,7 +22,8 @@ del all_text_tf_website[:4]
 
 text_tf_website = [s for s in all_text_tf_website if s != '']
 
-text_file = open("tf2 website text.txt", 'w')
+text_file = io.open("tf2 website text.txt", 'w', encoding="utf-8")
+
 
 for text in text_tf_website:
     text_file.write(str(text))
