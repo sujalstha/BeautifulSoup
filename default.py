@@ -21,5 +21,4 @@ del all_text_tf_website[:4]
 
 text_tf_website = [s for s in all_text_tf_website if s != '']
 
-for text in text_tf_website:
-    print(text)
+text_file = open("tf2 website text.txt", 'w')
