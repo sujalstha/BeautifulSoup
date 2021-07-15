@@ -1,7 +1,14 @@
 import re
 
+web_lis = []
+
 with open("tf2 website text.txt", "w") as file:
-    final = re.sub("\.", ".\n")
+    for line in file:
+        stripped_line = line.strip()
+        line_list = stripped_line.split()
+        web_lis.append(line_list)
+
+    file.close()
 
 
 def remove_doublespace(string):
