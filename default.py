@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import lxml
 import io
+import pickle
 
 url = requests.get('https://www.teamfortress.com/').text
 soup = BeautifulSoup(url, 'lxml')
@@ -22,9 +23,6 @@ del all_text_tf_website[:4]
 
 text_tf_website = [s for s in all_text_tf_website if s != '']
 
-text_file = io.open("tf2 website text.txt", 'w', encoding="utf-8")
+with io.open("tf2 website text.txt", 'w', encoding="utf-8") as text_file:
+    pickle.dump(text_tf_website, text_file)
 
-
-for text in text_tf_website:
-    text_file.write(str(text))
-text_file.close()
