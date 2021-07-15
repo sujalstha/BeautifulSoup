@@ -23,5 +23,6 @@ text_tf_website = [s for s in all_text_tf_website if s != '']
 
 text_file = open("tf2 website text.txt", 'w')
 
-for text in text_file:
-    pass
+for text in text_tf_website:
+    text_file.write(text + "\n")
+text_file.close()
