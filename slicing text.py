@@ -16,5 +16,5 @@ print(web_lis)
 
 def remove_doublespace(string):
     if '  ' not in string:
-       return string
-    return remove_doublespace(string.replace('  ',' '))
+        return string
+    return remove_doublespace(string.replace('  ', ' '))
