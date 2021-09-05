@@ -8,8 +8,9 @@ import pickle
 url = requests.get('https://www.soccerstats.com/').text
 soup = BeautifulSoup(url, 'lxml')
 id_find = soup.find_all('div')
-
-print(id_find)
+tbs = soup.find_all('table')
+for tbs in id_find:
+    print(tbs)
 
 '''all_text_tf_website = []
 
