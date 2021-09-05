@@ -11,7 +11,9 @@ id_find = soup.find_all('div')
 href = soup.find_all('href')
 # text = id_find.id.text
 
-all_text_tf_website = []
+print(id_find)
+
+'''all_text_tf_website = []
 
 for href in id_find:
     text_tf_web = href.text.replace('\n', '')
@@ -24,5 +26,5 @@ del all_text_tf_website[:4]
 text_tf_website = [s for s in all_text_tf_website if s != '']
 
 with io.open("tf2 website text.txt", 'w', encoding="utf-8") as text_file:
-    text_file.write("\n".join(text_tf_website))
+    text_file.write("\n".join(text_tf_website))'''
 
