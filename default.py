@@ -10,7 +10,7 @@ soup = BeautifulSoup(url, 'lxml')
 id_find = soup.find_all('div')
 tbs = soup.find_all('table')
 for tbs in id_find:
-    print(tbs)
+    print(tbs.text())
 
 '''all_text_tf_website = []
 
