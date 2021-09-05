@@ -5,7 +5,7 @@ import lxml
 import io
 import pickle
 
-url = requests.get('https://www.teamfortress.com/').text
+url = requests.get('https://www.soccerstats.com/').text
 soup = BeautifulSoup(url, 'lxml')
 id_find = soup.find_all('div')
 href = soup.find_all('href')
