@@ -2,8 +2,6 @@
 from bs4 import BeautifulSoup
 import requests
 import lxml
-import io
-import pickle
 
 url = requests.get('https://www.soccerstats.com/').text
 soup = BeautifulSoup(url, 'lxml')
