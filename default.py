@@ -11,7 +11,7 @@ id_find = soup.find_all('div')
 tbs = soup.find_all('table')
 
 for tbs in id_find:
-    stats_match = tbs.text.replace('\n', '')
+    print(tbs)
 
 '''all_text_tf_website = []
 
