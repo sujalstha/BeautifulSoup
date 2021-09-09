@@ -7,11 +7,11 @@ url = requests.get('https://www.soccerstats.com/').text
 soup = BeautifulSoup(url, 'lxml')
 id_find = soup.find_all('div')
 tbs = soup.find_all('seven columns')
+tb = soup.find_all('td')
 
 for tbs in id_find:
     for tb in tbs:
-        text_stat = tb.text.replace('/n', '')
-        print(text_stat)
+        print(tb)
 
 '''all_text_tf_website = []
 
