@@ -10,7 +10,7 @@ tbs = soup.find_all('seven columns')
 
 for tbs in id_find:
     for tb in tbs:
-        print(tb.text())
+        print(tb.text)
 
 '''all_text_tf_website = []
 
