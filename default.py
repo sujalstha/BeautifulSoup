@@ -5,11 +5,13 @@ import lxml
 
 url = requests.get('https://www.soccerstats.com/').text
 soup = BeautifulSoup(url, 'lxml')
-id_find = soup.find_all('div')
+id_find = soup.find_all('body')
 td = soup.find_all('tbody')
+tds = soup.find_all('td')
 
 for tb in id_find:
-    print(tb)
+    for tds in tb:
+        print(tds)
 
 '''all_text_tf_website = []
 
