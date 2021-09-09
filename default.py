@@ -10,6 +10,7 @@ tbs = soup.find_all('table')
 
 for tbs in id_find:
     text_stat = tbs.text.replace('\n', '')
+    print(text_stat)
 
 '''all_text_tf_website = []
 
