@@ -6,11 +6,11 @@ import lxml
 url = requests.get('https://www.soccerstats.com/').text
 soup = BeautifulSoup(url, 'lxml')
 id_find = soup.find_all('div')
-tbs = soup.find_all('table')
+tbs = soup.find_all('seven columns')
 
 for tbs in id_find:
-    text_stat = tbs.text.replace('\n', '')
-    print(text_stat)
+    for tb in tbs:
+        print(tb)
 
 '''all_text_tf_website = []
 
