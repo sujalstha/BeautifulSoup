@@ -9,7 +9,7 @@ id_find = soup.find_all('div')
 tbs = soup.find_all('table')
 
 for tbs in id_find:
-    print(tbs)
+    text_stat = tbs.text.replace('\n', '')
 
 '''all_text_tf_website = []
 
