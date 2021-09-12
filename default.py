@@ -13,7 +13,6 @@ for tb in id_find:
     for tds in tb:
         print(tds)
 
-
 '''all_text_tf_website = []
 
 for href in id_find:
